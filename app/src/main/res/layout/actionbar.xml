@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="166dp"
+        android:layout_height="match_parent"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="name"
+        android:textSize="25dp"></TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/fb"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/facebook"></ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/tw"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/twitter"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/favor"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/heart_outline"
+            android:visibility="invisible"></ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:id="@+id/favored"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/heart_filled"
+            android:visibility="visible"></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

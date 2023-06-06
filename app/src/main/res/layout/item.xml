@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/reslayout"
+    android:layout_width="390dp"
+    android:layout_height="110dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="10dp"
+
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="63dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/facebook">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:textColor="@color/white"
+        android:layout_height="30dp"
+        android:text="Event Name">
+
+    </TextView>
+
+
+                <TextView
+                    android:id="@+id/venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/white"
+                    android:text="Venue Name">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:text="Genre Name"
+                    android:textColor="@color/white">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Date Name"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Time Name"
+                    android:textColor="@color/white">
+
+                </TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/favor"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+
+        android:src="@drawable/heart_outline" />
+
+    <ImageView
+        android:id="@+id/favored"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:src="@drawable/heart_filled"
+        android:visibility="invisible" />
+</RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

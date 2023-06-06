@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context=".venueFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/black">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="270dp"
+                        >
+
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/map_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            map:cameraZoom="13"
+
+                            app:liteMode="true"
+                            app:mapType="normal" />
+
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:id="@+id/nameee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="39dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/addressss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="79dp"
+                        android:text="Address"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/cityyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="137dp"
+                        android:text="City/State"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/contacttt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="199dp"
+                        android:text="Contact Info"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+
+                    <HorizontalScrollView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit ="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+
+
+                            android:textColor="@color/teal_700"
+                            android:textSize="25dp"></TextView>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="212dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="79dp">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+
+                            android:text="Add"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit ="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/teal_700"
+                            android:textSize="25dp"></TextView>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="184dp"
+                        android:layout_marginTop="201dp">
+
+                        <TextView
+                            android:id="@+id/contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit ="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"
+                            android:text="Add"
+                            android:textColor="@color/teal_700"
+                            android:textSize="25dp"></TextView>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="187dp"
+                        android:layout_marginTop="139dp">
+
+                        <TextView
+                            android:id="@+id/city"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit ="marquee_forever"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scrollHorizontally="true"
+                            android:text="cityy"
+                            android:textColor="@color/teal_700"
+                            android:textSize="25dp"></TextView>
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="0dp">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="#F3D373">
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Open Hours"
+                                android:textSize="24dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/gen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/open"
+                                android:layout_centerHorizontal="true"
+                                android:text="General Rule"
+                                android:textSize="24dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/childdd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/general"
+                                android:layout_centerHorizontal="true"
+                                android:text="Child Rule"
+                                android:textSize="24dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/general"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/gen"
+                                android:layout_centerHorizontal="true"
+                                android:text="General"
+                                android:textSize="18dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/child"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/childdd"
+                                android:layout_centerHorizontal="true"
+                                android:text="Child"
+                                android:textSize="18dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/open"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="35dp"
+                                android:text="General Rule"
+                                android:textSize="18dp">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_width="394dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="-2dp"
+                                android:layout_marginBottom="-173dp">
+
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </ScrollView>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+
+</FrameLayout>
